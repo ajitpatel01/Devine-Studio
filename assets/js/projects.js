@@ -106,7 +106,7 @@ window.PROJECTS = [
   const arrowSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg>';
   const extLink = (l) => `<a class="link" href="${l.href}" target="_blank" rel="noopener">${esc(l.label)} <span class="arrow">${arrowSvg}${arrowSvg}</span></a>`;
 
-  document.title = `${p.name} — Devine Studio`;
+  document.title = `${p.name} — Divine Studio`;
   const desc = document.querySelector('meta[name="description"]');
   if (desc) desc.setAttribute('content', p.intro);
   set('title', p.title);

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Devine Studio — motion engine
+   Divine Studio — motion engine
    One rAF loop drives smooth scroll, scroll-scrubbed text, parallax and the
    team image expansion. Everything else is IntersectionObserver + CSS.
    ========================================================================== */

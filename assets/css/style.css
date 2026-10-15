@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Devine Studio — design system
+   Divine Studio — design system
    A quiet product studio: white, black, hairlines, one muted brass accent.
    Type: Newsreader (display), Inter (UI + body), Onest (figures)
    ========================================================================== */
@@ -732,8 +732,28 @@ h1, h2, h3, h4, p { margin: 0; font-weight: 500; }
 }
 .plan:hover { transform: translateY(-6px); box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.18); }
 .plan__name { font-family: var(--font-display); font-size: 28px; color: var(--ink); letter-spacing: -0.01em; }
-.plan__price { display: flex; align-items: center; gap: 8px; margin-top: 20px; }
+.plan__price { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 10px; margin-top: 20px; }
 .plan__price .from { color: var(--ink-60); font-size: 15px; align-self: flex-end; margin-bottom: 8px; }
+.plan__offer {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  line-height: 1.2;
+}
+.plan--featured .plan__offer { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.plan__was {
+  margin-top: 4px;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
 .plan__amount { display: inline-flex; align-items: center; }
 .plan__price .odo, .plan__price .cur { font-family: var(--font-num); font-size: 40px; letter-spacing: -0.07em; }
 .plan__price .cur { line-height: 1; }
