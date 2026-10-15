@@ -20,6 +20,7 @@
   --white-60: #ffffff;
   --accent: #000000;
   --brass: #a8864f;       /* small marks only */
+  --mark: #F26625;        /* logo orange, figure suffixes */
   --brass-soft: rgba(168, 134, 79, 0.16);
 
   --pad: 60px;
@@ -441,8 +442,8 @@ h1, h2, h3, h4, p { margin: 0; font-weight: 500; }
   gap: 40px;
   margin-top: 96px;
 }
-.stat__num { display: flex; align-items: center; color: var(--ink); font-family: var(--font-num); font-size: clamp(56px, 6.67vw, 96px); letter-spacing: -0.04em; line-height: 1; }
-.stat__num > span:not(.odo) { color: var(--brass); }
+.stat__num { display: flex; align-items: center; color: var(--mark); font-family: var(--font-num); font-size: clamp(56px, 6.67vw, 96px); letter-spacing: -0.04em; line-height: 1; }
+.stat__num > span:not(.odo) { color: var(--mark); }
 .stat__num .unit { font-size: 0.6em; align-self: flex-end; margin: 0 0 0.12em 0.04em; }
 .stat__label { margin-top: 12px; font-size: 18px; color: var(--ink-60); }
 .vision__rule { height: 1px; background: var(--line); margin-top: 72px; }
@@ -684,8 +685,13 @@ h1, h2, h3, h4, p { margin: 0; font-weight: 500; }
 .about__copy { grid-column: 2; display: flex; flex-direction: column; }
 .about__copy p.t-18 { margin-top: 72px; max-width: 340px; }
 .about__copy .link { margin-top: auto; align-self: flex-start; font-size: 24px; }
-.about__media { border-radius: var(--radius); overflow: hidden; aspect-ratio: 3 / 4; }
-.about__media img { width: 100%; height: 100%; object-fit: cover; }
+.about__team { grid-column: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-self: end; }
+.about__person { margin: 0; }
+.about__photo { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; aspect-ratio: 4 / 5; background: var(--dark); }
+.about__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
+.about__photo--daksh img { object-position: center 28%; }
+.about__name { margin-top: 14px; font-size: 18px; letter-spacing: -0.02em; }
+.about__line { margin-top: 4px; font-size: 15px; line-height: 1.35; letter-spacing: -0.02em; }
 
 /* PRICING ----------------------------------------------------------------- */
 .pricing { background: var(--bg-soft); }
@@ -755,7 +761,7 @@ h1, h2, h3, h4, p { margin: 0; font-weight: 500; }
   text-decoration-thickness: 1px;
 }
 .plan__amount { display: inline-flex; align-items: center; }
-.plan__price .odo, .plan__price .cur { font-family: var(--font-num); font-size: 40px; letter-spacing: -0.07em; }
+.plan__price .odo, .plan__price .cur { font-family: var(--font-num); font-size: 40px; letter-spacing: -0.07em; color: var(--mark); }
 .plan__price .cur { line-height: 1; }
 .plan__price .per { color: var(--ink-60); font-size: 16px; align-self: flex-end; margin-bottom: 8px; }
 .plan__desc { margin-top: 20px; color: var(--ink-60); font-size: 16px; min-height: 4.2em; }
@@ -1012,6 +1018,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .cal-band__note { font-size: 18px; letter-spacing: -0.02em; }
 .cal-band__note a { border-bottom: 1px solid currentColor; padding-bottom: 1px; }
 .bio__role { font-size: 15px; color: var(--brass); letter-spacing: 0.01em; }
+.bio__line { font-size: 16px; line-height: 1.4; letter-spacing: -0.02em; max-width: 28ch; }
 .bio__social { display: flex; gap: 8px; margin-top: 4px; }
 .bio__social a {
   width: 36px;
@@ -1066,6 +1073,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   .step { padding: 28px; }
   .about { grid-template-columns: 1fr 1fr; }
   .about__copy { grid-column: 1; }
+  .about__team { grid-column: 2; }
   .menu__secondary { padding-left: 0; }
   .plans { grid-template-columns: 1fr 1fr; }
   .plans--two { max-width: none; }
@@ -1111,6 +1119,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   .team__frame { position: relative; height: 80vh; min-height: 480px; clip-path: none; }
   .team__stats { grid-template-columns: 1fr; gap: 20px; bottom: 32px; }
   .about { grid-template-columns: 1fr; padding-top: 80px; }
+  .about__team { grid-column: 1; }
   .about__copy .link { margin-top: 40px; }
   .about__copy p.t-18 { margin-top: 32px; }
 
