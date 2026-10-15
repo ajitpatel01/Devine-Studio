@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project — Devine Studio</title>
+  <meta name="description" content="A Devine Studio case study.">
+  <link rel="canonical" href="https://devinestudio.com/project.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Devine Studio">
+  <meta property="og:title" content="Project — Devine Studio">
+  <meta property="og:description" content="A Devine Studio case study.">
+  <meta property="og:image" content="https://devinestudio.com/assets/img/hero-wave.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&family=Onest:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="project">
+
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="Devine Studio home"><span class="mark" aria-hidden="true"><svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#F26625"/><path d="M14 10.5h6.2c6 0 9.8 3.7 9.8 9.5s-3.8 9.5-9.8 9.5H14z" fill="none" stroke="#fff" stroke-width="2.3"/></svg></span><span>Devine</span></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu"><span class="roll"><span>Menu</span><span aria-hidden="true">Menu</span></span></button>
+    </div>
+  </header>
+  <nav class="menu" id="menu" aria-hidden="true" aria-label="Main">
+    <div class="container menu__inner">
+      <div class="menu__primary">
+        <a href="index.html" style="--i:0"><span>Home</span></a>
+        <a href="projects.html" style="--i:1" aria-current="page"><span>Projects</span></a>
+        <a href="journal.html" style="--i:2"><span>Journal</span></a>
+        <a href="about.html" style="--i:3"><span>About</span></a>
+        <a href="contact.html" style="--i:4"><span>Contact</span></a>
+      </div>
+      <div class="menu__secondary">
+        <div class="menu__group">
+          <p class="menu__label"><span style="--i:0">Legal</span></p>
+          <a href="privacy.html" style="--i:1"><span style="--i:1">Privacy Policy</span></a>
+          <a href="terms.html" style="--i:2"><span style="--i:2">Terms of Service</span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="pd-hero">
+      <div class="pd-hero__bg"><img data-bind="cover" src="assets/img/arrows.jpg" alt="" fetchpriority="high"></div>
+      <div class="pd-hero__inner">
+        <div class="chips" data-bind="chips" data-reveal></div>
+        <h1 class="t-72" data-bind="title" data-split="rise" style="--d:150"></h1>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="pd-intro">
+        <dl class="pd-meta" data-reveal>
+          <div><dt>Type</dt><dd data-bind="type"></dd></div>
+          <div><dt>Built by</dt><dd data-bind="by"></dd></div>
+          <div><dt>Stack</dt><dd><ul class="stack" data-bind="stack"></ul></dd></div>
+          <div class="pd-links" data-bind="links"></div>
+        </dl>
+        <p class="t-32" data-bind="intro" data-split="scrub"></p>
+      </section>
+
+      <section class="pd-block">
+        <h2 class="t-48" data-split="rise">The challenge</h2>
+        <p class="t-20 muted" data-bind="challenge" data-reveal></p>
+      </section>
+      <div class="pd-img pd-img--full" data-shot="0"><div class="pd-img__in" data-mask><img alt="" decoding="async"></div></div>
+
+      <section class="pd-block">
+        <h2 class="t-48" data-split="rise">What we built</h2>
+        <p class="t-20 muted" data-bind="built" data-reveal></p>
+      </section>
+      <div class="pd-img pd-img--full" data-shot="1"><div class="pd-img__in" data-mask><img alt="" decoding="async"></div></div>
+
+      <section class="pd-block pd-block--result">
+        <h2 class="t-48" data-split="rise">Result</h2>
+        <p class="t-20" data-bind="result" data-reveal></p>
+      </section>
+
+      <section class="pd-other">
+        <div class="pd-other__head">
+          <div>
+            <h2 class="t-72" data-split="rise">More work</h2>
+            <p class="t-18 muted" data-reveal>Everything here is live or public, so you can check it for yourself.</p>
+          </div>
+          <a class="link t-20" href="projects.html" data-reveal>All projects <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+        </div>
+        <div class="pi-grid" data-bind="others"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="cta__glow" aria-hidden="true"><i></i><i></i></div>
+    <div class="container cta__inner">
+      <h2 id="cta-title" class="t-96" data-split="rise">Tell us what you’re building.</h2>
+      <p class="t-18" data-reveal>A written scope and a fixed price. We reply to every inquiry within 48 hours.</p>
+      <div class="cta__actions" data-reveal style="--d:150"><a class="btn btn--light" href="contact.html"><span class="roll"><span>Start a project</span><span aria-hidden="true">Start a project</span></span></a><a class="btn btn--outline" href="contact.html#book"><span class="roll"><span>Book a 20-minute intro call</span><span aria-hidden="true">Book a 20-minute intro call</span></span></a></div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__logo"><span class="mark" aria-hidden="true"><svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#F26625"/><path d="M14 10.5h6.2c6 0 9.8 3.7 9.8 9.5s-3.8 9.5-9.8 9.5H14z" fill="none" stroke="#fff" stroke-width="2.3"/></svg></span><span>Devine</span></p>
+          <p class="footer__about">Devine Studio designs and builds websites, custom systems, AI automations, and launch films for companies that want the work to hold up after launch.</p>
+        </div>
+        <div class="footer__grid">
+          <nav aria-label="Studio">
+            <p class="footer__label">Studio</p>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="journal.html">Journal</a>
+          </nav>
+          <nav aria-label="Company">
+            <p class="footer__label">Company</p>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="footer__mail">
+            <p class="footer__label">New work</p>
+            <a href="mailto:contact@devinestudio.com">contact@devinestudio.com</a>
+            <a class="footer__book" href="contact.html#book">Book a 20-minute intro call</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Devine Studio. All rights reserved.</span>
+        <nav aria-label="Legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+      </div>
+      <p class="footer__mark" aria-hidden="true">Devine Studio</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/projects.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
